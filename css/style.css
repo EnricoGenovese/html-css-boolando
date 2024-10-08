@@ -5,3 +5,69 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* debug */
+
+.debug {
+    border: 1px solid red;
+}
+
+/* custom properties */
+
+:root {
+    --orange: #FF6900;  /* header*/
+    --red: #FC0F0F;     /* discount badge + text*/
+    --green: #0F860F;   /* description badge */  
+    --dark: #1A1A1A;    /* footer*/
+}
+
+/* general */
+
+a {
+    text-decoration: none;
+    padding-right: 10px;
+    text-align: center;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* header */
+header {
+    background-color: var(--orange);
+}
+
+header a {
+    color: white;
+    vertical-align: middle;
+}
+
+#logo {
+    width: 20%;
+    height: 100%;
+}
+
+/* main */
+
+/* footer */
+
+/* flex utlity */
+
+.d-flex {
+    display: flex;
+}
+
+.dir-col {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+/* position utility*/
