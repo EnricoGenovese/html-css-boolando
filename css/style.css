@@ -67,8 +67,7 @@ main {
     margin: 0 auto;
 }
 
-main img {
-    width: calc((1200px - 15px) / 3);
+main img {    width: calc((1200px - 15px) / 3);
     max-width: 100%;
     margin-top: 30px auto;
 }
@@ -77,21 +76,26 @@ main img {
     display: none;
 }
 
-.badge {
+.badge, .lable {
     position: absolute;
     padding: 5px;
     background-color: var(--red);
-    color: white;
-    font-weight: 700;
     top: 0;
     left: 0;
 }
 
 .lable {
-    position: relative;
-    padding:5px;
+    background-color: var(--green);
+    left: 50px;
 }
+
+
+
 /* footer */
+
+footer {
+    margin-top: 50px;
+}
 
 /* flex utlity */
 
@@ -119,12 +123,13 @@ main img {
  
 .p-relative {
     position: relative;
-    top: 0;
+    bottom: 15%;
     left:0;
     flex-wrap: wrap;
 }
 
 /* colors */
+
 .price-red {
     color: var(--red);
     font-size: 0,8em;
@@ -136,3 +141,7 @@ main img {
     font-weight: 200;
 }
 
+.bold-white {
+    color: white;
+    font-weight: 700;
+}
