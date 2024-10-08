@@ -27,12 +27,12 @@ a {
     text-decoration: none;
     padding-right: 10px;
     text-align: center;
-    padding: 5px;
 }
 
 nav {
     margin: 0 auto;
     width: 1200px;
+    max-width: 100%;
     vertical-align: middle;
 }
 
@@ -43,6 +43,7 @@ header {
     position: fixed;
     z-index: 1000;
     width: 100%;
+    top: 0;
     vertical-align: middle;
     padding: 20px;
 }
@@ -57,7 +58,7 @@ h4 {
 
 #logo {
     width: 20%;
-    height: 100%;
+    height: auto;
 }
 
 .container {
@@ -68,18 +69,23 @@ h4 {
 
 main { 
     margin: 0 auto;
+    margin-top: 50px;
 }
 
-main img {    width: calc((1200px - 15px) / 3);
+main img {    
+    width: calc((1200px - 15px) / 3);
     max-width: 100%;
     margin-top: 30px;
 }
 
-.h-img {
+img.h-img {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-.h-img:hover {
+.p-relative:hover img.h-img {
     display: block;
     position: absolute;
     z-index: 500;
@@ -88,8 +94,9 @@ main img {    width: calc((1200px - 15px) / 3);
 .badge, .lable {
     position: absolute;
     padding: 5px;
-    top: 0;
+    bottom: 15%;
     left: 0;
+    display: inline;
 }
 
 .badge {
@@ -156,16 +163,13 @@ footer a {
  
 .p-relative {
     position: relative;
-    bottom: 15%;
-    left:0;
-    flex-wrap: wrap;
+    
 }
 
 /* colors */
 
 .price-red {
     color: var(--red);
-    font-size: 0.8em;
 }
 
 .full-price {
