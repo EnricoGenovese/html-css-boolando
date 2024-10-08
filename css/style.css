@@ -26,10 +26,13 @@ a {
     text-decoration: none;
     padding-right: 10px;
     text-align: center;
+    padding: 5px;
 }
 
 nav {
     margin: 0 auto;
+    width: 1200px;
+    vertical-align: middle;
 }
 
 /* header */
@@ -39,13 +42,16 @@ header {
     position: fixed;
     z-index: 1000;
     width: 100%;
-}
-
-header a {
-    color: white;
     vertical-align: middle;
 }
 
+header a {
+    color: white;  
+}
+
+h4 {
+    text-transform: uppercase;
+}
 #logo {
     width: 20%;
     height: 100%;
@@ -59,14 +65,32 @@ header a {
 
 main { 
     margin: 0 auto;
-    height: 100px;
 }
 
-.row {
-    width: calc((1200px - 10px) / 3);
+main img {
+    width: calc((1200px - 15px) / 3);
     max-width: 100%;
+    margin-top: 30px auto;
 }
 
+.h-img {
+    display: none;
+}
+
+.badge {
+    position: absolute;
+    padding: 5px;
+    background-color: var(--red);
+    color: white;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+}
+
+.lable {
+    position: relative;
+    padding:5px;
+}
 /* footer */
 
 /* flex utlity */
@@ -80,7 +104,6 @@ main {
 }
 
 .center {
-    align-items: center;
     justify-content: center;
 }
 
@@ -88,17 +111,28 @@ main {
     justify-content: space-between;
 }
 
-/* position utility*/
-
-.p-absolute {
-    position: absolute;
+.f-wrap {
     flex-wrap: wrap;
-    gap: 5px;
 }
 
+/* position utility*/
+ 
 .p-relative {
     position: relative;
     top: 0;
     left:0;
     flex-wrap: wrap;
 }
+
+/* colors */
+.price-red {
+    color: var(--red);
+    font-size: 0,8em;
+}
+
+.full-price {
+    color: var(--dark);
+    text-decoration: line-through;
+    font-weight: 200;
+}
+
